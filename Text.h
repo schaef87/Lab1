@@ -49,7 +49,7 @@ class Text
 
     // Data members
     int bufferSize;   // Size of the string buffer
-    char *buffer;     // Text buffer containing a null-terminated sequence of characters
+    char* buffer;     // Text buffer containing a null-terminated sequence of characters
 
   // Friends
 
