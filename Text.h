@@ -28,6 +28,7 @@ class Text
 
     // Text operations
     int getLength () const;                          // # characters
+    char* getLetters() const;                        // Return Char Letters
     char operator [] ( int n ) const;                // Subscript
     void clear ();                                   // Clear string
 

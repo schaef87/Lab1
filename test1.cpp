@@ -53,72 +53,72 @@ int main()
            cout << "empty text object" << endl;
            empty.showStructure();
            break;
-      case '2' :
-           // Test 2 : Tests the length operation.
-           cout << "Lengths of various text object:"  << endl;
-           cout << " alpha   : " << alpha.getLength() << endl;
-           cout << " epsilon : " << epsilon.getLength() << endl;
-           cout << " a       : " << a.getLength() << endl;
-           cout << " empty   : " << empty.getLength() << endl;
-           break;
-
-      case '3' :
-           // Test 3 : Tests the subscript operation.
-           cout << "Enter a subscript : ";
-           cin >> n;
-           ch = alpha[n];
-           cout << "  alpha[" << n << "] : ";
-           if ( ch == '\0' )
-              cout << "\\0" << endl;
-           else
-              cout << ch << endl;
-           break;
-
-      case '4' :
-           // Test 4 : Tests the assignment and clear operations.
-           cout << "Assignments:" << endl;
-           cout << "assignText = alpha" << endl;
-           assignText = alpha;
-           assignText.showStructure();
-           cout << "assignText = a" << endl;
-           assignText = a;
-           assignText.showStructure();
-           cout << "assignText = empty" << endl;
-           assignText = empty;
-           assignText.showStructure();
-           cout << "assignText = epsilon" << endl;
-           assignText = epsilon;
-           assignText.showStructure();
-           cout << "assignText = assignText" << endl;
-           assignText = assignText;
-           assignText.showStructure();
-           cout << "assignText = alpha" << endl;
-           assignText = alpha;
-           assignText.showStructure();
-           cout << "Clear assignText" << endl;
-           assignText.clear();
-           assignText.showStructure();
-           cout << "Confirm that alpha has not been cleared" << endl;
-           alpha.showStructure();
-           break;
-
-      case '5' :
-           // Test 5 : Tests the copy constructor and operator= operations.
-           cout << "Calls by value:" << endl;
-           cout << "alpha before call" << endl;
-           alpha.showStructure();
-           copyTester(alpha);
-           cout << "alpha after call" << endl;
-           alpha.showStructure();
-
-           cout << "a before call" << endl;
-           a.showStructure();
-           a = epsilon;
-           cout << "a after call" << endl;
-           a.showStructure();
-           cout << "epsilon after call" << endl;
-           epsilon.showStructure();
-           break;
+//      case '2' :
+//           // Test 2 : Tests the length operation.
+//           cout << "Lengths of various text object:"  << endl;
+//           cout << " alpha   : " << alpha.getLength() << endl;
+//           cout << " epsilon : " << epsilon.getLength() << endl;
+//           cout << " a       : " << a.getLength() << endl;
+//           cout << " empty   : " << empty.getLength() << endl;
+//           break;
+//
+//      case '3' :
+//           // Test 3 : Tests the subscript operation.
+//           cout << "Enter a subscript : ";
+//           cin >> n;
+//           ch = alpha[n];
+//           cout << "  alpha[" << n << "] : ";
+//           if ( ch == '\0' )
+//              cout << "\\0" << endl;
+//           else
+//              cout << ch << endl;
+//           break;
+//
+//      case '4' :
+//           // Test 4 : Tests the assignment and clear operations.
+//           cout << "Assignments:" << endl;
+//           cout << "assignText = alpha" << endl;
+//           assignText = alpha;
+//           assignText.showStructure();
+//           cout << "assignText = a" << endl;
+//           assignText = a;
+//           assignText.showStructure();
+//           cout << "assignText = empty" << endl;
+//           assignText = empty;
+//           assignText.showStructure();
+//           cout << "assignText = epsilon" << endl;
+//           assignText = epsilon;
+//           assignText.showStructure();
+//           cout << "assignText = assignText" << endl;
+//           assignText = assignText;
+//           assignText.showStructure();
+//           cout << "assignText = alpha" << endl;
+//           assignText = alpha;
+//           assignText.showStructure();
+//           cout << "Clear assignText" << endl;
+//           assignText.clear();
+//           assignText.showStructure();
+//           cout << "Confirm that alpha has not been cleared" << endl;
+//           alpha.showStructure();
+//           break;
+//
+//      case '5' :
+//           // Test 5 : Tests the copy constructor and operator= operations.
+//           cout << "Calls by value:" << endl;
+//           cout << "alpha before call" << endl;
+//           alpha.showStructure();
+//           copyTester(alpha);
+//           cout << "alpha after call" << endl;
+//           alpha.showStructure();
+//
+//           cout << "a before call" << endl;
+//           a.showStructure();
+//           a = epsilon;
+//           cout << "a after call" << endl;
+//           a.showStructure();
+//           cout << "epsilon after call" << endl;
+//           epsilon.showStructure();
+//           break;
 
 #if   LAB1_TEST1
       case '6' :                                  // In-lab Exercise 2

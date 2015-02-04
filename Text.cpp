@@ -12,24 +12,33 @@ Text::Text (const char* charSeq){
 }
 
 Text::Text (const Text& other){
-	bufferSize = getLength();
+	bufferSize = other.getLength();
 	buffer = new char[bufferSize];
 
-	//strcpy(other, Text);
+	strcpy(buffer, other.getLetters());
 }
 
 int Text::getLength()const{
 	return bufferSize;
 }
-//
-//Text::clear(){
-//	buffer = "";
-//}
-//
-//Text::showStructure(){
-//cout << buffer;
-//}
-//
+
+char* Text::getLetters()const{
+	return buffer;
+}
+
+void Text::clear(){
+	buffer[0] = '0';
+}
+
+Text::~Text(){
+	delete buffer;
+}
+
+void Text::showStructure()const{
+cout << buffer << endl;
+}
+
+//    FIX THIS INEFFICIENT GARBAGE - I.e. I love you man
 //Text::toUpper(const Text& other){
 //	bufferSize = strlen(Text) + 1;
 //	buffer = new char[bufferSize];
