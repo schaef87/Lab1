@@ -1,4 +1,5 @@
 /* ***USE ZYBOOK 5.15 FOR C STRING SYNTAX INFORMATION*** */
+//  This is just a test for GitHub Syncing IGNORE!
 
 #include "Text.h"
 #include <iostream>
