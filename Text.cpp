@@ -1,6 +1,4 @@
 /* ***USE ZYBOOK 5.15 FOR C STRING SYNTAX INFORMATION*** */
-//  This is just a test for GitHub Syncing IGNORE!
-//  This is just a test for GitHub Syncing FROM SCHOOL IGNORE!
 
 #include "Text.h"
 #include <iostream>
@@ -8,21 +6,21 @@
 
 using namespace std;
 
-Text::Text (const char* charSeq = ""){
-	bufferSize = strlen(charSeq) + 1;
+Text::Text (const char* charSeq){
+	bufferSize = strlen((charSeq) + 1);
 	buffer = new char[bufferSize];
 }
 
 Text::Text (const Text& other){
-	bufferSize = strlen(this Text) + 1;
+	bufferSize = getLength();
 	buffer = new char[bufferSize];
-	other = new char[bufferSize];
-	char* strcpy(other, this Text);
+
+	//strcpy(other, Text);
 }
 
-//Text::getLength(){
-//	return bufferSize;
-//}
+int Text::getLength()const{
+	return bufferSize;
+}
 //
 //Text::clear(){
 //	buffer = "";
