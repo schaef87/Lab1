@@ -38,8 +38,8 @@ class Text
     //--------------------------------------------------------------------
     // In-lab operations
     // toUpper/toLower operations (Programming Exercise 2)
-    Text toUpper( ) const;                           // Create upper-case copy
-    Text toLower( ) const;                           // Create lower-case copy
+    Text toUpper( const Text& other ) const;         // Create upper-case copy
+    Text toLower( const Text& other ) const;         // Create lower-case copy
 
     // Relational operations (Programming Exercise 3)
     bool operator == ( const Text& other ) const;

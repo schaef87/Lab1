@@ -74,34 +74,34 @@ int main()
               cout << ch << endl;
            break;
 
-//      case '4' :
-//           // Test 4 : Tests the assignment and clear operations.
-//           cout << "Assignments:" << endl;
-//           cout << "assignText = alpha" << endl;
-//           assignText = alpha;
-//           assignText.showStructure();
-//           cout << "assignText = a" << endl;
-//           assignText = a;
-//           assignText.showStructure();
-//           cout << "assignText = empty" << endl;
-//           assignText = empty;
-//           assignText.showStructure();
-//           cout << "assignText = epsilon" << endl;
-//           assignText = epsilon;
-//           assignText.showStructure();
-//           cout << "assignText = assignText" << endl;
-//           assignText = assignText;
-//           assignText.showStructure();
-//           cout << "assignText = alpha" << endl;
-//           assignText = alpha;
-//           assignText.showStructure();
-//           cout << "Clear assignText" << endl;
-//           assignText.clear();
-//           assignText.showStructure();
-//           cout << "Confirm that alpha has not been cleared" << endl;
-//           alpha.showStructure();
-//           break;
-//
+      case '4' :
+           // Test 4 : Tests the assignment and clear operations.
+           cout << "Assignments:" << endl;
+           cout << "assignText = alpha" << endl;
+           assignText = alpha;
+           assignText.showStructure();
+           cout << "assignText = a" << endl;
+           assignText = a;
+           assignText.showStructure();
+           cout << "assignText = empty" << endl;
+           assignText = empty;
+           assignText.showStructure();
+           cout << "assignText = epsilon" << endl;
+           assignText = epsilon;
+           assignText.showStructure();
+           cout << "assignText = assignText" << endl;
+           assignText == assignText;
+           assignText.showStructure();
+           cout << "assignText = alpha" << endl;
+           assignText = alpha;
+           assignText.showStructure();
+           cout << "Clear assignText" << endl;
+           assignText.clear();
+           assignText.showStructure();
+           cout << "Confirm that alpha has not been cleared" << endl;
+           alpha.showStructure();
+           break;
+
 //      case '5' :
 //           // Test 5 : Tests the copy constructor and operator= operations.
 //           cout << "Calls by value:" << endl;
