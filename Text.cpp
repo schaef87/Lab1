@@ -18,20 +18,6 @@ Text::Text (const Text& other){
 	strcpy(buffer, other.getLetters());
 }
 
-void Text::operator = (const Text& other){
-	bufferSize = other.getLength();
-	buffer = new char[bufferSize];
-	strcpy(buffer, other.getLetters());
-}
-
-char Text::operator [] (int n) const{
-	if (n < bufferSize){
-		return buffer[n];
-	} else {
-		return '\0';
-	}
-}
-
 int Text::getLength()const{
 	return (bufferSize - 1);
 }
@@ -52,65 +38,37 @@ void Text::showStructure()const{
 cout << buffer << endl;
 }
 
-// ******** Individual Stuff **********
+//Text::operator    ***!!!FIX THIS!!!***
 
-//void Text::toUpper(const Text& other){
-//	int i = 0;
-//	char* word = other;
-//	char c;
-//	while (word[i]){
-//		c=word[i];
-//		word[i] = toupper(c);
-//		i++;
-//	}
+//    FIX THIS INEFFICIENT GARBAGE - I.e. I love you man
+//Text::toUpper(const Text& other){
+//	bufferSize = strlen(Text) + 1;
+//	buffer = new char[bufferSize];
+//
+//	int x = 0;
+//	while(bufferSize[x]){
+//		if(buffer[x] > 96 && buffer[x] < 123){
+//			buffer[x] = buffer[x] - 32;
+//			x++;
+//		} else {
+//			x++;
+//		} //End of IF
+//	}  //End of WHILE
 //
 //}
 //
-//void Text::toLower(const Text& other){
-//	int i = 0;
-//	char* word = other;
-//	char c;
-//	while (word[i]){
-//		c=word[i];
-//		word[i] = tolower(c);
-//		i++;
-//	}
+//Text::toLower(){
+//	bufferSize = strlen(Text) + 1;
+//	buffer = new char[bufferSize];
 //
-//}
-// **************************  TEXTIO.CPP STUFF ***************************************
-//istream & operator >> ( istream &input, Text &inputText )
+//	int x = 0;
+//	while(bufferSize[x]){
+//		if(buffer[x] > 64 && buffer[x] < 91){
+//			buffer[x] = buffer[x] + 32;
+//			x++;
+//		} else {
+//			x++;
+//		} //End of IF
+//	}  //End of WHILE
 //
-//// Text input function. Extracts a string from istream input and
-//// returns it in inputText. Returns the state of the input stream.
-//
-//{
-//    const int textBufferSize = 256;     // Large (but finite)
-//    char textBuffer [textBufferSize];   // text buffer
-//
-//    // Read a string into textBuffer, setw is used to prevent buffer
-//    // overflow.
-//
-//    input >> setw(textBufferSize) >> textBuffer;
-//
-//    // Apply the Text(char*) constructor to convert textBuffer to
-//    // a string. Assign the resulting string to inputText using the
-//    // assignment operator.
-//
-//    inputText = textBuffer;
-//
-//    // Return the state of the input stream.
-//
-//    return input;
-//}
-//
-////--------------------------------------------------------------------
-//
-//ostream & operator << ( ostream &output, const Text &outputText )
-//
-//// Text output function. Inserts outputText in ostream output.
-//// Returns the state of the output stream.
-//
-//{
-//   output << outputText.buffer;
-//   return output;
 //}
