@@ -9,12 +9,12 @@ using namespace std;
 Text::Text (const char* charSeq){
 	bufferSize = strlen((charSeq) + 1);
 	buffer = new char[bufferSize];
+	strcpy(buffer, charSeq);
 }
 
 Text::Text (const Text& other){
 	bufferSize = other.getLength();
 	buffer = new char[bufferSize];
-
 	strcpy(buffer, other.getLetters());
 }
 
@@ -27,7 +27,7 @@ char* Text::getLetters()const{
 }
 
 void Text::clear(){
-	buffer[0] = '0';
+	buffer[0] = '\0';
 }
 
 Text::~Text(){

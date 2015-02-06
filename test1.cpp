@@ -53,15 +53,15 @@ int main()
            cout << "empty text object" << endl;
            empty.showStructure();
            break;
-//      case '2' :
-//           // Test 2 : Tests the length operation.
-//           cout << "Lengths of various text object:"  << endl;
-//           cout << " alpha   : " << alpha.getLength() << endl;
-//           cout << " epsilon : " << epsilon.getLength() << endl;
-//           cout << " a       : " << a.getLength() << endl;
-//           cout << " empty   : " << empty.getLength() << endl;
-//           break;
-//
+      case '2' :
+           // Test 2 : Tests the length operation.
+           cout << "Lengths of various text object:"  << endl;
+           cout << " alpha   : " << alpha.getLength() << endl;
+           cout << " epsilon : " << epsilon.getLength() << endl;
+           cout << " a       : " << a.getLength() << endl;
+           cout << " empty   : " << empty.getLength() << endl;
+           break;
+
 //      case '3' :
 //           // Test 3 : Tests the subscript operation.
 //           cout << "Enter a subscript : ";
