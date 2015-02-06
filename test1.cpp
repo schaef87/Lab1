@@ -62,18 +62,18 @@ int main()
            cout << " empty   : " << empty.getLength() << endl;
            break;
 
-//      case '3' :
-//           // Test 3 : Tests the subscript operation.
-//           cout << "Enter a subscript : ";
-//           cin >> n;
-//           ch = alpha[n];
-//           cout << "  alpha[" << n << "] : ";
-//           if ( ch == '\0' )
-//              cout << "\\0" << endl;
-//           else
-//              cout << ch << endl;
-//           break;
-//
+      case '3' :
+           // Test 3 : Tests the subscript operation.
+           cout << "Enter a subscript : ";
+           cin >> n;
+           ch = alpha[n];
+           cout << "  alpha[" << n << "] : ";
+           if ( ch == '\0' )
+              cout << "\\0" << endl;
+           else
+              cout << ch << endl;
+           break;
+
 //      case '4' :
 //           // Test 4 : Tests the assignment and clear operations.
 //           cout << "Assignments:" << endl;

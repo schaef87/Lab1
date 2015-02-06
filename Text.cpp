@@ -7,7 +7,7 @@
 using namespace std;
 
 Text::Text (const char* charSeq){
-	bufferSize = strlen((charSeq) + 1);
+	bufferSize = strlen (charSeq) + 1;
 	buffer = new char[bufferSize];
 	strcpy(buffer, charSeq);
 }
@@ -19,7 +19,7 @@ Text::Text (const Text& other){
 }
 
 int Text::getLength()const{
-	return bufferSize;
+	return (bufferSize - 1);
 }
 
 char* Text::getLetters()const{
@@ -37,6 +37,8 @@ Text::~Text(){
 void Text::showStructure()const{
 cout << buffer << endl;
 }
+
+//Text::operator    ***!!!FIX THIS!!!***
 
 //    FIX THIS INEFFICIENT GARBAGE - I.e. I love you man
 //Text::toUpper(const Text& other){
