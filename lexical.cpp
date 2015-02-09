@@ -17,16 +17,20 @@ using namespace std;
 int main() {
 	//Variables
 	ifstream inFS;
-	Text token;
+	char* input;
+	Text Token;
 
 	//Open File
 	inFS.open("progsamp.dat");
-	 if (!inFS.is_open()) {
-	      cout << "Could not open file." << endl;
-	      return 1; // 1 indicates error
-	   }
+	if (!inFS.is_open()) {
+		cout << "Could not open file." << endl;
+		return 1; // 1 indicates error
+	}
 
-	 //Start Parsing
+	while(inFS.eof()){
+cin >> inFS.
+	}
+	inFS.close();
 
-
+	return 0;
 }
