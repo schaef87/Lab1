@@ -19,9 +19,11 @@ Text::Text (const Text& other){
 }
 
 void Text::operator = (const Text& other){
+	if(buffer != other.getLetters()){
 	bufferSize = other.getLength();
 	buffer = new char[bufferSize];
 	strcpy(buffer, other.getLetters());
+	}
 }
 
 char Text::operator [] (int n) const{

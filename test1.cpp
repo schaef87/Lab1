@@ -90,7 +90,7 @@ int main()
            assignText = epsilon;
            assignText.showStructure();
            cout << "assignText = assignText" << endl;
-           assignText == assignText;
+           assignText = assignText;
            assignText.showStructure();
            cout << "assignText = alpha" << endl;
            assignText = alpha;
@@ -102,23 +102,23 @@ int main()
            alpha.showStructure();
            break;
 
-//      case '5' :
-//           // Test 5 : Tests the copy constructor and operator= operations.
-//           cout << "Calls by value:" << endl;
-//           cout << "alpha before call" << endl;
-//           alpha.showStructure();
-//           copyTester(alpha);
-//           cout << "alpha after call" << endl;
-//           alpha.showStructure();
-//
-//           cout << "a before call" << endl;
-//           a.showStructure();
-//           a = epsilon;
-//           cout << "a after call" << endl;
-//           a.showStructure();
-//           cout << "epsilon after call" << endl;
-//           epsilon.showStructure();
-//           break;
+      case '5' :
+           // Test 5 : Tests the copy constructor and operator= operations.
+           cout << "Calls by value:" << endl;
+           cout << "alpha before call" << endl;
+           alpha.showStructure();
+           copyTester(alpha);
+           cout << "alpha after call" << endl;
+           alpha.showStructure();
+
+           cout << "a before call" << endl;
+           a.showStructure();
+           a = epsilon;
+           cout << "a after call" << endl;
+           a.showStructure();
+           cout << "epsilon after call" << endl;
+           epsilon.showStructure();
+           break;
 
 #if   LAB1_TEST1
       case '6' :                                  // In-lab Exercise 2
