@@ -8,6 +8,7 @@
 // Idividual lab created by Justin Schaefer
 
 #include "Text.h"
+#include "Text.cpp"
 #include <iostream>
 #include <cstring>
 #include <fstream>
@@ -28,7 +29,7 @@ int main() {
 	}
 
 	while(inFS.eof()){
-cin >> inFS.
+		cin >> inFS;
 	}
 	inFS.close();
 
