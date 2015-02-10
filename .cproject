@@ -40,13 +40,11 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="cdt.managedbuild.config.gnu.mingw.exe.debug.1860433046.1730062389" name="test1.cpp" rcbsApplicability="disable" resourcePath="test1.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.1131354261.1824979520">
-						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.1131354261.1824979520" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.1131354261">
-							<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.2100051285" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
-						</tool>
+					<fileInfo id="cdt.managedbuild.config.gnu.mingw.exe.debug.1860433046.667777810" name="lexical.cpp" rcbsApplicability="disable" resourcePath="lexical.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.1131354261.915948069">
+						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.1131354261.915948069" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.1131354261"/>
 					</fileInfo>
 					<sourceEntries>
-						<entry excluding="Text.cpp|test1.cpp|textio.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="lexical.cpp|textio.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
