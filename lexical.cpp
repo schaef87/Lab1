@@ -23,9 +23,10 @@ int main() {
 	myFile.open("progsamp.dat");
 	if (myFile.is_open()) {
 		cout << "File opened successfully" << endl;
-		while(!myFile.eof()){
-			myFile >> token;
-			cout << token.getLetters() << endl;
+		int x = 1;
+		while(myFile >> token){
+			cout << x << " " << token << endl;
+			x++;
 		}
 	} else {
 		cout << "File did not open" << endl;
